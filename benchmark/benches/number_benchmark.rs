@@ -10,7 +10,7 @@ fn bytes_cmp(s: &str) -> bool {
 }
 
 fn parse_vs_bytes_cmp_benchmark(c: &mut Criterion) {
-  let mut group = c.benchmark_group("Number parse vs bytes cmp");
+  let mut group = c.benchmark_group("number_parse");
 
   group.bench_function("parse", |b| b.iter(|| parse("10")));
 

@@ -52,7 +52,7 @@ fn large_reader_vs_slice_benchmark(c: &mut Criterion) {
   let users = vec![user; 100];
 
   let users = Arc::new(users.join(","));
-  let mut group = c.benchmark_group("Large serde");
+  let mut group = c.benchmark_group("large_serde");
 
   group.bench_with_input("reader", &users, |b, u| b.iter(|| serde_with_reader(u)));
 
