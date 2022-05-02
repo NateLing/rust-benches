@@ -1,0 +1,21 @@
+# 项目支持的最低生锈版本（默认为None）
+msrv = "1.62"
+# avoid-breaking-exported-api = false
+blacklisted-names =  ["toto", "tata", "titi"]
+cognitive-complexity-threshold =  20
+too-large-for-stack = 100
+# 堆栈上数组的最大允许大小
+array-size-threshold = 200
+# 枚举大小受最大变体的限制。具有较大的变体会损害该枚举的内存布局（默认为200)
+enum-variant-size-threshold = 20
+# 装箱类型的大小（以字节为单位），其中Vec允许以a装箱（默认为4096)
+vec-box-size-threshold = 100
+# 类型可以具有的最大复杂度（默认为250）
+#  Rc<Vec<Vec<Box<(u32, u32, u32, u32)>>>>
+# type-complexity-threshold = 260
+# 函数或方法可以具有的最大参数数量（默认为7）
+too-many-arguments-threshold = 5
+# 函数或方法可以具有的最大行数（默认为100）
+too-many-lines-threshold = 20
+# 结构可以具有的布尔值的最大数量（默认为3）
+max-struct-bools = 2
